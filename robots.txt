@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rasulkhanbayov.github.io/sitemap.xml

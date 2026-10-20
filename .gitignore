@@ -1,0 +1,9 @@
+# Original source documents (kept locally, never published)
+_source/
+raw_data.txt
+
+# LaTeX build output
+cv_latex/*.aux
+cv_latex/*.log
+cv_latex/*.out
+cv_latex/*.pdf

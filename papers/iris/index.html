@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video — Rasul Khanbayov</title>
+<meta name="description" content="IRIS is a benchmark of 240 real-world 4K, 60 fps videos of single- and multi-body dynamical systems with measured ground-truth parameters, plus a standardized protocol for recovering physical parameters and governing equations from monocular video.">
+<meta name="author" content="Rasul Khanbayov">
+<link rel="canonical" href="https://rasulkhanbayov.github.io/papers/iris/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rasul Khanbayov">
+<meta property="og:title" content="IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video — Rasul Khanbayov">
+<meta property="og:description" content="IRIS is a benchmark of 240 real-world 4K, 60 fps videos of single- and multi-body dynamical systems with measured ground-truth parameters, plus a standardized protocol for recovering physical parameters and governing equations from monocular video.">
+<meta property="og:url" content="https://rasulkhanbayov.github.io/papers/iris/">
+<meta property="og:image" content="https://rasulkhanbayov.github.io/images/profile.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FAFAFA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" type="image/png" href="../../images/favicon.png">
+<script>
+/* Apply the saved (or system) theme before first paint to avoid a flash. */
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark-pending');
+  }
+})();
+</script>
+</head>
+<body class="sub">
+<button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark/light mode"><span class="material-icons" id="theme-icon">light_mode</span></button>
+<main class="page">
+<nav class="breadcrumb"><a href="../../">Rasul Khanbayov</a> &rsaquo; <a href="../">Publications</a> &rsaquo; IRIS</nav>
+<h1>IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video</h1>
+<p class="meta"><b>Rasul Khanbayov*</b>, Mohamed Rayan Barhdadi*, Erchin Serpedin, Hasan Kurban <span class="eq-note">(* equal contribution)</span><br>
+<em>European Conference on Computer Vision (ECCV)</em>, 2026</p>
+<p class="figure"><img src="../../images/thumbs/iris.jpg" width="600" height="267" decoding="async" alt="Figure from IRIS"></p>
+<p><strong>In one sentence.</strong> IRIS is a benchmark of 240 real-world 4K, 60 fps videos of single- and multi-body dynamical systems with measured ground-truth parameters, plus a standardized protocol for recovering physical parameters and governing equations from monocular video.</p>
+<p class="pub-links"><a href="https://arxiv.org/abs/2603.16432" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<a href="https://kurbanintelligencelab.github.io/iris-bench/" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">language</span> Project Page</a>
+<a href="https://huggingface.co/datasets/rasulkhanbayov/IRIS" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">dataset</span> Dataset</a></p>
+<h2>Abstract</h2>
+<p class="abstract">Unsupervised physical parameter estimation from video lacks a common benchmark: existing methods evaluate on non-overlapping synthetic data, the sole real-world dataset is restricted to single-body systems, and no established protocol addresses governing-equation identification. This work introduces IRIS, a high-fidelity benchmark comprising 240 real-world videos captured at 4K resolution and 60fps, spanning both single- and multi-body dynamics with independently measured ground-truth parameters and uncertainty estimates. Each dynamical system is recorded under controlled laboratory conditions and paired with its governing equations, enabling principled evaluation. A standardized evaluation protocol is defined encompassing parameter accuracy, identifiability, extrapolation, robustness, and governing-equation selection. Multiple baselines are evaluated, including a multi-step physics loss formulation and four complementary equation-identification strategies (VLM temporal reasoning, describe-then-classify prompting, CNN-based classification, and path-based labelling), establishing reference performance across all IRIS scenarios and exposing systematic failure modes that motivate future research. The dataset, annotations, evaluation toolkit, and all baseline implementations are publicly released.</p>
+<h2>BibTeX</h2>
+<pre class="bibtex">@inproceedings{khanbayov2026iris,
+  title     = {IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video},
+  author    = {Khanbayov, Rasul and Barhdadi, Mohamed Rayan and Serpedin, Erchin and Kurban, Hasan},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  pages     = {366--383},
+  publisher = {Springer Nature Switzerland},
+  year      = {2026}
+}</pre>
+
+<div class="author-box">
+<p><strong>About the author.</strong> <a href="../../">Rasul Khanbayov</a> is a computer science PhD student at
+<strong>Hamad Bin Khalifa University</strong> working on computer vision and multimodal learning, with a focus on
+<strong>physical reasoning from video</strong> and the <strong>reliability of vision&ndash;language models</strong>.</p>
+<p style="margin:0;"><a href="../../" class="btn"><span class="material-icons">home</span> Homepage</a>
+<a href="../" class="btn"><span class="material-icons">library_books</span> All publications</a>
+<a href="../../data/Rasul_Khanbayov_CV.pdf" class="btn" target="_blank" rel="noopener"><span class="material-icons">description</span> CV</a></p>
+</div>
+</main>
+<footer>
+<p><a href="../../">Rasul Khanbayov</a> &middot; <a href="../../papers/">Publications</a> &middot; <a href="../../cv/">CV</a></p>
+<p>&copy; 2026 Rasul Khanbayov</p>
+</footer>
+<script>
+(function () {
+  var body = document.body, icon = document.getElementById('theme-icon');
+  function set(dark) {
+    body.classList.toggle('dark', dark);
+    if (icon) icon.textContent = dark ? 'dark_mode' : 'light_mode';
+  }
+  set(document.documentElement.classList.contains('dark-pending'));
+  document.documentElement.classList.remove('dark-pending');
+  document.getElementById('theme-toggle').addEventListener('click', function () {
+    var dark = !body.classList.contains('dark');
+    set(dark);
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

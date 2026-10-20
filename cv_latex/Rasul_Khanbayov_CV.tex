@@ -1,0 +1,253 @@
+% Curriculum Vitae of Rasul Khanbayov
+% Compiles on Overleaf with XeLaTeX or LuaLaTeX (Menu -> Compiler), or locally with `tectonic`.
+
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, top=1.4cm, bottom=1.5cm, left=5.4cm, right=2.0cm]{geometry}
+\usepackage{libertine}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\linespread{1.03}
+\setlength{\emergencystretch}{2em}
+
+% ---------- Layout helpers ----------
+% Width of the left column that holds the section titles, and the gap after it.
+\newlength{\titlecol}\setlength{\titlecol}{3.0cm}
+\newlength{\titlegap}\setlength{\titlegap}{0.6cm}
+\newlength{\fullshift}\setlength{\fullshift}{\dimexpr\titlecol+\titlegap\relax}
+
+% Section titles sit in the left column, in small caps.
+\titleformat{\section}[leftmargin]
+  {\normalfont\biolinum\scshape\Large\raggedright}{}{0pt}{}
+\titlespacing*{\section}{\titlecol}{2.6ex plus .5ex}{\titlegap}
+
+% Content spanning the full page width (header and rule).
+\newcommand{\fullwidth}[1]{\noindent\hspace*{-\fullshift}\makebox[\dimexpr\textwidth+\fullshift\relax][c]{#1}}
+
+% \entry{Institution}{Location}{Degree / role}{Dates}
+\newcommand{\entry}[4]{%
+  \textbf{#1}\hfill #2\par
+  \textit{#3}\hfill #4\par}
+
+% \job{Role}{Dates}{Organisation}{Location / team}
+\newcommand{\job}[4]{%
+  \textbf{#1}\hfill #2\par
+  \textbf{#3}, #4\par}
+
+\setlist[itemize]{leftmargin=1.2em, label=\textbullet, itemsep=0pt, parsep=0pt, topsep=1pt, after=\vspace{4pt}}
+\setlist[enumerate]{leftmargin=2.0em, itemsep=4pt, parsep=0pt, topsep=4pt}
+
+\newcommand{\me}{\textbf{Rasul Khanbayov}}
+\newcommand{\pubgroup}[1]{\vspace{6pt}{\small\textsc{#1}}\par}
+
+\begin{document}
+
+% ---------- Header ----------
+\fullwidth{{\fontsize{30}{34}\selectfont\scshape Rasul Khanbayov}}\par
+\vspace{4pt}
+\fullwidth{\small
+  \href{mailto:rasulkhanbayov@gmail.com}{rasulkhanbayov@gmail.com}
+  \enspace|\enspace \href{https://rasulkhanbayov.github.io}{rasulkhanbayov.github.io}
+  \enspace|\enspace \href{https://www.linkedin.com/in/rasulkhanbayov}{linkedin.com/in/rasulkhanbayov}
+  \enspace|\enspace \href{https://github.com/rasulkhanbayov}{github.com/rasulkhanbayov}}\par
+\vspace{8pt}
+\fullwidth{\rule{\dimexpr\textwidth+\fullshift\relax}{0.4pt}}\par
+\vspace{2pt}
+
+% ---------- Education ----------
+\section{Education}
+
+\entry{Hamad Bin Khalifa University}{Doha, Qatar}{Ph.D. in Computer Science \& Engineering}{Jan.\ 2026 -- Present}
+\begin{itemize}
+  \item Research: physical reasoning from video and reliability of vision--language models
+\end{itemize}
+
+\entry{Technical University of Munich}{Munich, Germany}{M.Sc.\ in Informatics}{Oct.\ 2022 -- Aug.\ 2025}
+\begin{itemize}
+  \item Major: Machine Learning \& Analytics. Minors: Computer Graphics \& Vision; Engineering Software-intensive Systems
+  \item Thesis: \textit{Multimodal Registration of 3D OCT and Fundus Images of the Retina}
+\end{itemize}
+
+\entry{Eötvös Loránd University}{Budapest, Hungary}{B.Sc.\ in Computer Science}{Sep.\ 2019 -- Jun.\ 2022}
+\begin{itemize}
+  \item GPA: 5.0/5.0 (highest grade)
+  \item Thesis: \textit{Orchestrator Cloud Manager Application}
+\end{itemize}
+
+% ---------- Research interests ----------
+\section{Research Interest}
+
+Physical Reasoning from Video, Vision--Language Models, Multimodal Learning, Reliable Evaluation and Benchmarks,
+3D/4D Scene Understanding, Medical Imaging
+
+% ---------- Publications ----------
+\section{Preprints \& Publications}
+
+{\small *denotes equal contribution}\par
+
+\pubgroup{Selected Publications}
+\begin{enumerate}
+  \item \me, Erchin Serpedin, Hasan Kurban.
+    GRAPE: Graph-Augmented Prototype Explanations for Interactive Medical Image Diagnosis.
+    \textit{Conference on Neural Information Processing Systems (NeurIPS)}, 2026.
+  \item \textbf{Rasul Khanbayov*}, Mohamed Rayan Barhdadi*, Erchin Serpedin, Hasan Kurban.
+    IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video.
+    \textit{European Conference on Computer Vision (ECCV)}, Springer, pp.\ 366--383, 2026.
+  \item \me, Hasan Kurban.
+    Consistency Has a Computable Blind Spot: A Commutation Theory of Label-Free Reliability for Vision--Language Figure Reading.
+    \textit{Findings of the Association for Computational Linguistics: EACL}, 2027.
+  \item \me, Hasan Kurban.
+    When Does Consensus Mean Correctness? Measuring the Agreement--Accuracy Coupling with Semantics-Preserving Re-Rendering.
+    \textit{Findings of the Association for Computational Linguistics: EACL}, 2027.
+\end{enumerate}
+
+\pubgroup{Other Peer-reviewed Publications}
+\begin{enumerate}[resume]
+  \item Danqing Chen*, Adithi Satish*, \textbf{Rasul Khanbayov*}, Carolin M.\ Schuster, Georg Groh.
+    Tuning Into Bias: A Computational Study of Gender Bias in Song Lyrics.
+    \textit{Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and
+    Literature (LaTeCH-CLfL)}, pp.\ 117--129, 2025.
+  \item Guohao Lin, Shidong Pan, \me, Changxi Yang, Ani Khaloian-Sarnaghi, Andriy Kovryga.
+    Automated Knot Detection and Pairing for Wood Analysis in the Timber Industry.
+    \textit{International Conference on Neural Information Processing (ICONIP)}, Springer, pp.\ 81--95, 2025.
+\end{enumerate}
+
+\pubgroup{Under Review}
+\begin{enumerate}[resume]
+  \item \me, Hasan Kurban.
+    Truncation Samplers Are Nested: Comparing Decoding Rules Is a Measurement Problem.
+    \textit{Submitted to ICLR 2027} (arXiv:2610.15570).
+  \item \me, Hasan Kurban.
+    The Gradient That Top-k Distillation Never Computes.
+    \textit{Submitted to AISTATS 2027} (arXiv:2610.15589).
+  \item \me, Hasan Kurban.
+    A Low Grounding Score Is Not an Ungrounded Judge: Identifying the Perceptibility Confound in Multimodal Oversight.
+    \textit{Submitted to AAAI 2027, AI Alignment Track} (arXiv:2610.00111).
+  \item \me, Mariam Sohail, Ahmed Abdala, Hasan Kurban.
+    One Perturbation Is Not Enough: Identifiability and Blind Baselines for Behavioral AI Evaluation.
+    \textit{Submitted to AAAI 2027, AI Alignment Track} (arXiv:2609.06190).
+  \item \me, Hasan Kurban.
+    PhysWeep: Does a Video Generator Realize the Physics You Ask For?
+    \textit{Submitted to Pattern Recognition} (arXiv:2609.06207).
+  \item Hasan Kurban, \me, Mustafa Kurban.
+    Physics as the label for measuring and correcting materials reasoning in multimodal models.
+    \textit{Submitted to Knowledge-Based Systems} (arXiv:2609.12181).
+  \item \me, Hasan Kurban.
+    Topical Phase Transitions in Artificial Intelligence Research: Large-Scale Evidence and an Early-Warning Signature for Emerging Topics.
+    \textit{Submitted to Quantitative Science Studies} (arXiv:2606.12828).
+\end{enumerate}
+
+\pubgroup{Mentored Student Research}
+{\small\itshape Papers led by undergraduate students in our lab whom I mentor as a PhD student; I contributed in an advisory role.}\par
+\begin{enumerate}[resume]
+  \item Rama AlHamidi, \me, Erchin Serpedin, Hasan Kurban.
+    Counterfactual Sensitivity Is Not Repairability: Auditing Replay Probes for Video Evidence.
+    \textit{arXiv preprint arXiv:2608.15685}, 2026.
+  \item Aseel Mohamed, \me, Erchin Serpedin, Hasan Kurban.
+    Conformal Coverage Guarantees for Any Video Temporal Grounder.
+    \textit{Submitted to AISTATS 2027} (arXiv:2608.07434).
+  \item Rama AlHamidi, Aseel Mohamed, \me, Mohamed Rayan Barhdadi, Erchin Serpedin, Hasan Kurban.
+    Accuracy and Cost Claims Do Not Survive Re-Execution in Agentic VideoQA.
+    \textit{Submitted to Image and Vision Computing} (arXiv:2607.01469).
+  \item Mohamed Rayan Barhdadi, Samir Abdaljalil, \me, Erchin Serpedin, Hasan Kurban.
+    4D Synchronized Fields: Motion-Language Gaussian Splatting for Temporal Scene Understanding.
+    \textit{Submitted to AAAI 2027} (arXiv:2603.14301).
+\end{enumerate}
+
+% ---------- Research experience ----------
+\section{Research Experience}
+
+\job{Graduate Research Assistant}{Jan.\ 2026 -- Present}{Hamad Bin Khalifa University}{Doha, Qatar}
+\begin{itemize}
+  \item Research in computer vision and multimodal learning, focused on physical reasoning from video and on
+        vision--language understanding of charts and scientific figures.
+  \item Physics from video: recovering the dynamics and physical parameters of real-world systems from monocular video,
+        including a benchmark for inverse system identification (ECCV 2026) and motion-language Gaussian splatting
+        for temporal scene understanding.
+  \item Charts and figures: label-free reliability measures for vision--language figure reading, testing when model
+        agreement actually implies correctness via semantics-preserving re-rendering.
+  \item Mentor undergraduate students in the lab on video agents, temporal grounding and 4D scene understanding.
+\end{itemize}
+
+\job{Student Researcher}{Sep.\ 2023 -- Aug.\ 2024}{Technical University of Munich}{Munich, Germany}
+\begin{itemize}
+  \item Computer vision for wood technology: automated knot detection and pairing on high-resolution board images;
+        fine-tuned YOLOv8 (mAP@0.5 of 0.887) and paired knots via feature-embedding clustering (ICONIP 2025).
+  \item NLP \& computational social science: BERTopic pipeline over large-scale song lyrics and gender-bias measurement
+        with Word2Vec and SC-WEAT (LaTeCH-CLfL 2025).
+\end{itemize}
+
+% ---------- Industry experience ----------
+\section{Industry Experience}
+
+\job{Artificial Intelligence Engineer}{Nov.\ 2025 -- Aug.\ 2026}{OneVue Inc.}{Cleveland, USA (Remote)}
+\begin{itemize}
+  \item Built and optimised retinal image analysis pipelines for early detection of diabetic and pre-diabetic conditions.
+  \item Adapted retinal foundation models (RETFound, ViT-based) through transfer learning and fine-tuning for downstream
+        classification, reducing reliance on large labelled clinical datasets.
+  \item Combined fundus/OCT imaging with patient metadata (multimodal inputs) to improve diagnostic performance.
+\end{itemize}
+
+\job{Computer Vision Engineer}{Sep.\ 2024 -- Aug.\ 2025}{SynthesEyes}{Munich, Germany}
+\begin{itemize}
+  \item Designed attention U-Nets mapping high-resolution 3D intraoperative OCT volumes to informative 2D feature maps
+        for real-time surgical visualisation, outperforming conventional OCT projections.
+  \item Built a multimodal registration pipeline with LoFTR and GeoFormer to align learned 2D OCT representations with
+        complementary imaging views.
+\end{itemize}
+
+\job{Business Analyst Intern}{Oct.\ 2022 -- Mar.\ 2023}{BMW Group}{Munich, Germany}
+\begin{itemize}
+  \item Built KPI dashboards for product-line quality management, used by quality managers to surface and track issues.
+  \item Debugged, tested and refactored the existing codebase (JavaScript, Python, PySpark, SQL, Slate).
+\end{itemize}
+
+\job{Software Developer (Student)}{Mar.\ 2021 -- Jul.\ 2022}{Ericsson}{Budapest, Hungary}
+\begin{itemize}
+  \item Developed and maintained features for the Ericsson Orchestrator Cloud Manager in a cross-functional team;
+        wrote functional tests and resolved customer-raised trouble reports (Java, Spring, Docker, Kubernetes, Jenkins).
+\end{itemize}
+
+% ---------- Awards and honors ----------
+% One \item per award: \item \textbf{Award name}, Awarding organisation \hfill Year
+\section{Awards and Honors}
+\begin{itemize}
+  \item \textbf{Qatar Foundation Scholar}, Ph.D.\ scholarship \hfill Jan.\ 2026
+  \item \textbf{Azerbaijani State Program Scholarship}, M.Sc.\ scholarship \hfill Aug.\ 2022
+  \item \textbf{Outstanding Student of the Faculty}, Eötvös Loránd University \hfill May 2022
+  \item \textbf{Stipendium Hungaricum Scholar}, B.Sc.\ scholarship, Hungary \hfill Sep.\ 2020
+\end{itemize}
+
+% ---------- Service ----------
+% One line per year, e.g. \textbf{Reviewer:} NeurIPS, ICLR, CVPR \hfill 2026\par
+\section{Service}
+\textbf{Reviewer:} AAMAS, AAAI, ICLR \hfill 2027\par
+
+% ---------- Teaching ----------
+% One \item per course: \item \textbf{Role}, CODE: Course name\\ University \hfill Term
+\section{Teaching}
+\begin{itemize}
+  \item \textbf{Tutor Assistant}, ENGR 110: Introduction to Programming\\
+        Hamad Bin Khalifa University \hfill Spring 2026
+  \item \textbf{Demonstrator}, IP-18fKVADA: Ada Programming Language\\
+        Eötvös Loránd University \hfill Winter 2021, Spring 2022
+  \item \textbf{Tutor Assistant}, IP-18fFUNPEG: Functional Programming Language\\
+        Eötvös Loránd University \hfill Spring 2021
+\end{itemize}
+
+% ---------- Skills ----------
+\section{Skills}
+{\raggedright
+\textbf{Programming Languages}: Python, C++, Java, JavaScript, SQL\par
+\textbf{ML Frameworks}: PyTorch, TensorFlow, Hugging Face, Ultralytics, ONNX, timm, MONAI, scikit-learn, NumPy, SciPy\par
+\textbf{Computer Vision}: OpenCV, CUDA, detection/tracking, Vision Transformers, U-Net, image registration (LoFTR, GeoFormer),
+3D/Gaussian splatting, medical imaging (OCT/fundus, DICOM/NIfTI)\par
+\textbf{NLP \& LLMs}: vision--language models, BERT/GPT, RAG, LlamaIndex, Ollama, BERTopic, prompt engineering\par
+\textbf{Tools}: Git, Docker, Kubernetes, Jenkins CI/CD, AWS, Azure\par}
+
+\end{document}

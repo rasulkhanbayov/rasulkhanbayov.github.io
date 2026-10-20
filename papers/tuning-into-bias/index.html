@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuning Into Bias: A Computational Study of Gender Bias in Song Lyrics — Rasul Khanbayov</title>
+<meta name="description" content="A topic-modeling study of 537,553 English songs that traces a shift from romantic themes toward the sexualization of women, and measures gender bias in word embeddings with SC-WEAT across topics and genres.">
+<meta name="author" content="Rasul Khanbayov">
+<link rel="canonical" href="https://rasulkhanbayov.github.io/papers/tuning-into-bias/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rasul Khanbayov">
+<meta property="og:title" content="Tuning Into Bias: A Computational Study of Gender Bias in Song Lyrics — Rasul Khanbayov">
+<meta property="og:description" content="A topic-modeling study of 537,553 English songs that traces a shift from romantic themes toward the sexualization of women, and measures gender bias in word embeddings with SC-WEAT across topics and genres.">
+<meta property="og:url" content="https://rasulkhanbayov.github.io/papers/tuning-into-bias/">
+<meta property="og:image" content="https://rasulkhanbayov.github.io/images/profile.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FAFAFA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" type="image/png" href="../../images/favicon.png">
+<script>
+/* Apply the saved (or system) theme before first paint to avoid a flash. */
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark-pending');
+  }
+})();
+</script>
+</head>
+<body class="sub">
+<button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark/light mode"><span class="material-icons" id="theme-icon">light_mode</span></button>
+<main class="page">
+<nav class="breadcrumb"><a href="../../">Rasul Khanbayov</a> &rsaquo; <a href="../">Publications</a> &rsaquo; Tuning Into Bias</nav>
+<h1>Tuning Into Bias: A Computational Study of Gender Bias in Song Lyrics</h1>
+<p class="meta">Danqing Chen*, Adithi Satish*, <b>Rasul Khanbayov*</b>, Carolin M. Schuster, Georg Groh <span class="eq-note">(* equal contribution)</span><br>
+<em>Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL)</em>, 2025</p>
+<p class="figure"><img src="../../images/thumbs/tuning-into-bias.jpg" width="600" height="492" decoding="async" alt="Figure from Tuning Into Bias"></p>
+<p><strong>In one sentence.</strong> A topic-modeling study of 537,553 English songs that traces a shift from romantic themes toward the sexualization of women, and measures gender bias in word embeddings with SC-WEAT across topics and genres.</p>
+<p class="pub-links"><a href="https://aclanthology.org/2025.latechclfl-1.12.pdf" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<a href="https://aclanthology.org/2025.latechclfl-1.12/" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">menu_book</span> ACL Anthology</a></p>
+<h2>Abstract</h2>
+<p class="abstract">The application of text mining methods is becoming increasingly prevalent, particularly within Humanities and Computational Social Sciences, as well as in a broader range of disciplines. This paper presents an analysis of gender bias in English song lyrics using topic modeling and bias measurement techniques. Leveraging BERTopic, we cluster a dataset of 537,553 English songs into distinct topics and analyze their temporal evolution. Our results reveal a significant thematic shift in song lyrics over time, transitioning from romantic themes to a heightened focus on the sexualization of women. Additionally, we observe a substantial prevalence of profanity and misogynistic content across various topics, with a particularly high concentration in the largest thematic cluster. To further analyse gender bias across topics and genres in a quantitative way, we employ the Single Category Word Embedding Association Test (SC-WEAT) to calculate bias scores for word embeddings trained on the most prominent topics as well as individual genres. The results indicate a consistent male bias in words associated with intelligence and strength, while appearance and weakness words show a female bias. Further analysis highlights variations in these biases across topics, illustrating the interplay between thematic content and gender stereotypes in song lyrics.</p>
+<h2>BibTeX</h2>
+<pre class="bibtex">@inproceedings{chen2025tuning,
+  title     = {Tuning Into Bias: A Computational Study of Gender Bias in Song Lyrics},
+  author    = {Chen, Danqing and Satish, Adithi and Khanbayov, Rasul and Schuster, Carolin M. and Groh, Georg},
+  booktitle = {Proceedings of the 9th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL 2025)},
+  pages     = {117--129},
+  year      = {2025}
+}</pre>
+
+<div class="author-box">
+<p><strong>About the author.</strong> <a href="../../">Rasul Khanbayov</a> is a computer science PhD student at
+<strong>Hamad Bin Khalifa University</strong> working on computer vision and multimodal learning, with a focus on
+<strong>physical reasoning from video</strong> and the <strong>reliability of vision&ndash;language models</strong>.</p>
+<p style="margin:0;"><a href="../../" class="btn"><span class="material-icons">home</span> Homepage</a>
+<a href="../" class="btn"><span class="material-icons">library_books</span> All publications</a>
+<a href="../../data/Rasul_Khanbayov_CV.pdf" class="btn" target="_blank" rel="noopener"><span class="material-icons">description</span> CV</a></p>
+</div>
+</main>
+<footer>
+<p><a href="../../">Rasul Khanbayov</a> &middot; <a href="../../papers/">Publications</a> &middot; <a href="../../cv/">CV</a></p>
+<p>&copy; 2026 Rasul Khanbayov</p>
+</footer>
+<script>
+(function () {
+  var body = document.body, icon = document.getElementById('theme-icon');
+  function set(dark) {
+    body.classList.toggle('dark', dark);
+    if (icon) icon.textContent = dark ? 'dark_mode' : 'light_mode';
+  }
+  set(document.documentElement.classList.contains('dark-pending'));
+  document.documentElement.classList.remove('dark-pending');
+  document.getElementById('theme-toggle').addEventListener('click', function () {
+    var dark = !body.classList.contains('dark');
+    set(dark);
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

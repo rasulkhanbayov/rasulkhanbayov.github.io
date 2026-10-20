@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rasul Khanbayov — CS PhD Student, Hamad Bin Khalifa University | Computer Vision, Multimodal Learning</title>
+<meta name="description" content="Rasul Khanbayov is a computer science PhD student at Hamad Bin Khalifa University working on computer vision and multimodal learning: physical reasoning from video and the reliability of vision-language models.">
+<meta name="author" content="Rasul Khanbayov">
+<link rel="canonical" href="https://rasulkhanbayov.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rasul Khanbayov">
+<meta property="og:title" content="Rasul Khanbayov — CS PhD Student, Hamad Bin Khalifa University | Computer Vision, Multimodal Learning">
+<meta property="og:description" content="Rasul Khanbayov is a computer science PhD student at Hamad Bin Khalifa University working on computer vision and multimodal learning: physical reasoning from video and the reliability of vision-language models.">
+<meta property="og:url" content="https://rasulkhanbayov.github.io/">
+<meta property="og:image" content="https://rasulkhanbayov.github.io/images/profile.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FAFAFA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<script>
+/* Apply the saved (or system) theme before first paint to avoid a flash. */
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark-pending');
+  }
+})();
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Rasul Khanbayov",
+ "url": "https://rasulkhanbayov.github.io/",
+ "image": "https://rasulkhanbayov.github.io/images/profile.jpg",
+ "email": "mailto:rasulkhanbayov@gmail.com",
+ "jobTitle": "PhD Student in Computer Science & Engineering",
+ "affiliation": {
+  "@type": "CollegeOrUniversity",
+  "name": "Hamad Bin Khalifa University",
+  "url": "https://www.hbku.edu.qa/"
+ },
+ "alumniOf": [
+  {
+   "@type": "CollegeOrUniversity",
+   "name": "Technical University of Munich"
+  },
+  {
+   "@type": "CollegeOrUniversity",
+   "name": "Eötvös Loránd University"
+  }
+ ],
+ "knowsAbout": [
+  "Computer vision",
+  "Multimodal learning",
+  "Vision-language models",
+  "Physical reasoning from video",
+  "Benchmarks and evaluation",
+  "Medical imaging"
+ ],
+ "sameAs": [
+  "https://www.linkedin.com/in/rasulkhanbayov/",
+  "https://github.com/rasulkhanbayov"
+ ]
+}
+</script>
+</head>
+<body>
+<button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark/light mode"><span class="material-icons" id="theme-icon">light_mode</span></button>
+<main class="page">
+<section class="intro">
+  <div class="intro-name">
+    <h1 class="site-name">Rasul Khanbayov</h1>
+    <p class="email-text">rasulkhanbayov at gmail dot com</p>
+  </div>
+  <div class="intro-bio">
+    <p>Hi! I am a first-year computer science PhD student at <a href="https://www.hbku.edu.qa/">Hamad Bin Khalifa
+    University</a> in Doha, Qatar, where I work as a Graduate Research Assistant on computer vision and multimodal learning.</p>
+    <p>My research runs in two directions. The first is <b>physical reasoning from video</b>: recovering the dynamics and
+    physical parameters of real-world systems from monocular footage, which led to the <a href="papers/iris/">IRIS</a>
+    benchmark (ECCV 2026). The second is <b>reliability of vision&ndash;language models</b>: label-free measures for figure
+    and chart reading, and testing when agreement between models actually implies correctness. Both share one goal &mdash;
+    evaluation that holds up, separating real capability from artifacts of the test set.</p>
+    <p>Previously, I received an MSc in Informatics from the <a href="https://www.tum.de/en/">Technical University of
+    Munich</a>, with a thesis on multimodal registration of 3D OCT and fundus images of the retina, and a BSc in Computer
+    Science from <a href="https://www.elte.hu/en/">Eötvös Loránd University</a>. Along the way I built production AI and
+    software systems at OneVue, SynthesEyes, BMW Group and Ericsson.</p>
+    <p><b>I am open to research internships for summer 2027.</b> Feel free to get in touch!</p>
+    <p class="intro-links">
+      <a href="data/Rasul_Khanbayov_CV.pdf" class="btn" target="_blank" rel="noopener"><span class="material-icons">description</span> CV</a>
+      <a href="papers/" class="btn"><span class="material-icons">library_books</span> Publications</a>
+      <!-- TODO: add Google Scholar once you have the URL:
+      <a href="https://scholar.google.com/citations?user=XXXX" class="btn" target="_blank" rel="noopener"><span class="material-icons">school</span> Google Scholar</a> -->
+      <a href="https://www.linkedin.com/in/rasulkhanbayov/" class="btn" target="_blank" rel="noopener"><span class="material-icons">business</span> LinkedIn</a>
+      <a href="https://github.com/rasulkhanbayov" class="btn" target="_blank" rel="noopener"><span class="material-icons">code</span> GitHub</a>
+      <a href="mailto:rasulkhanbayov@gmail.com" class="btn"><span class="material-icons">mail</span> Email</a>
+    </p>
+  </div>
+  <div class="intro-photo">
+    <img src="images/profile.jpg" width="477" height="522" fetchpriority="high" decoding="async"
+    alt="Rasul Khanbayov, PhD student in computer science at Hamad Bin Khalifa University">
+  </div>
+</section>
+
+<h2>News</h2>
+<div class="news"><ul>
+<li><time class="news-date" datetime="2026-07">Jul &rsquo;26</time><span>Our paper &ldquo;<strong><a href="papers/iris/">IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video</a></strong>&rdquo; was accepted to ECCV 2026.</span></li>
+<li><time class="news-date" datetime="2026">2026</time><span>Our paper &ldquo;<strong><a href="papers/grape/">GRAPE: Graph-Augmented Prototype Explanations for Interactive Medical Image Diagnosis</a></strong>&rdquo; was accepted to NeurIPS 2026.</span></li>
+<li><time class="news-date" datetime="2026">2026</time><span>Two papers on the reliability of vision&ndash;language figure reading, &ldquo;<strong><a href="papers/consistency-blind-spot/">Consistency Has a Computable Blind Spot</a></strong>&rdquo; and &ldquo;<strong><a href="papers/consensus-correctness/">When Does Consensus Mean Correctness?</a></strong>&rdquo;, were accepted to Findings of EACL 2027.</span></li>
+<li><time class="news-date" datetime="2026-01">Jan &rsquo;26</time><span>Started my PhD in Computer Science &amp; Engineering at <strong><a href="https://www.hbku.edu.qa/" target="_blank" rel="noopener">Hamad Bin Khalifa University</a></strong>.</span></li>
+<li><time class="news-date" datetime="2025-11">Nov &rsquo;25</time><span>Our paper &ldquo;<strong><a href="papers/knot-detection/">Automated Knot Detection and Pairing for Wood Analysis in the Timber Industry</a></strong>&rdquo; was published at ICONIP 2025.</span></li>
+<li><time class="news-date" datetime="2025-11">Nov &rsquo;25</time><span>Joined <strong>OneVue Inc.</strong> as an AI engineer, working on retinal image analysis.</span></li>
+<li><time class="news-date" datetime="2025-08">Aug &rsquo;25</time><span>Completed my MSc in Informatics at the <strong><a href="https://www.tum.de/en/" target="_blank" rel="noopener">Technical University of Munich</a></strong>.</span></li>
+<li><time class="news-date" datetime="2025-05">May &rsquo;25</time><span>Our paper &ldquo;<strong><a href="papers/tuning-into-bias/">Tuning Into Bias: A Computational Study of Gender Bias in Song Lyrics</a></strong>&rdquo; appeared at LaTeCH-CLfL 2025 (NAACL).</span></li>
+<li><time class="news-date" datetime="2024-09">Sep &rsquo;24</time><span>Joined <strong>SynthesEyes</strong> as a computer vision engineer, working on intraoperative OCT.</span></li>
+</ul></div>
+
+<h2>Research</h2>
+<p>I work on physical reasoning from video, the reliability of vision&ndash;language models, and evaluation that holds
+up &mdash; along with earlier work on medical imaging and computational social science. See the
+<a href="papers/">publications page</a> for details on each paper.</p>
+
+<div class="tabs" role="tablist">
+  <button class="tab-btn active" type="button" data-filter="all">All</button>
+  <button class="tab-btn" type="button" data-filter="selected">Selected</button>
+  <button class="tab-btn" type="button" data-filter="peer">Peer-reviewed</button>
+  <button class="tab-btn" type="button" data-filter="submitted">Under review</button>
+  <button class="tab-btn" type="button" data-filter="mentored">Mentored</button>
+</div>
+
+<section class="pub-group" data-group="selected">
+<h3 class="group-title">Selected Publications</h3>
+<div class="pubs">
+<article class="pub">
+<div class="pub-thumb"><a href="papers/grape/"><img src="images/thumbs/grape.jpg" width="600" height="398" loading="lazy" decoding="async" alt="Figure from GRAPE"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/grape/">GRAPE: Graph-Augmented Prototype Explanations for Interactive Medical Image Diagnosis</a></h3>
+<b>Rasul Khanbayov</b>, Erchin Serpedin, Hasan Kurban<br>
+<em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2026
+<div class="pub-desc">GRAPE is an interactive prototype-based classifier for medical images that models anatomical concept co-occurrence with a graph attention head, warns when physician feedback conflicts with the model&#x27;s evidence, and adds new findings from a single labeled image.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2606.30901" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<a href="https://github.com/KurbanIntelligenceLab/GRAPE" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">code</span> Code</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@inproceedings{khanbayov2026grape,
+  title     = {GRAPE: Graph-Augmented Prototype Explanations for Interactive Medical Image Diagnosis},
+  author    = {Khanbayov, Rasul and Serpedin, Erchin and Kurban, Hasan},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/iris/"><img src="images/thumbs/iris.jpg" width="600" height="267" loading="lazy" decoding="async" alt="Figure from IRIS"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/iris/">IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video</a></h3>
+<b>Rasul Khanbayov*</b>, Mohamed Rayan Barhdadi*, Erchin Serpedin, Hasan Kurban <span class="eq-note">(* equal contribution)</span><br>
+<em>European Conference on Computer Vision (ECCV)</em>, 2026
+<div class="pub-desc">IRIS is a benchmark of 240 real-world 4K, 60 fps videos of single- and multi-body dynamical systems with measured ground-truth parameters, plus a standardized protocol for recovering physical parameters and governing equations from monocular video.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2603.16432" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<a href="https://kurbanintelligencelab.github.io/iris-bench/" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">language</span> Project Page</a>
+<a href="https://huggingface.co/datasets/rasulkhanbayov/IRIS" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">dataset</span> Dataset</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@inproceedings{khanbayov2026iris,
+  title     = {IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video},
+  author    = {Khanbayov, Rasul and Barhdadi, Mohamed Rayan and Serpedin, Erchin and Kurban, Hasan},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  pages     = {366--383},
+  publisher = {Springer Nature Switzerland},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/consistency-blind-spot/"><img src="images/thumbs/consistency-blind-spot.jpg" width="600" height="391" loading="lazy" decoding="async" alt="Figure from Consistency Blind Spot"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/consistency-blind-spot/">Consistency Has a Computable Blind Spot: A Commutation Theory of Label-Free Reliability for Vision–Language Figure Reading</a></h3>
+<b>Rasul Khanbayov</b>, Hasan Kurban<br>
+<em>Findings of the Association for Computational Linguistics: EACL</em>, 2027
+<div class="pub-desc">Shows that the blind spot of invariance-based reliability checks for figure-reading vision-language models is computable, and introduces the Equivariance-Consistency Score, a label-free detector built on edits that should change the answer by a known amount.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2608.05675" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@inproceedings{khanbayov2027consistency,
+  title     = {Consistency Has a Computable Blind Spot: A Commutation Theory of Label-Free Reliability for Vision–Language Figure Reading},
+  author    = {Khanbayov, Rasul and Kurban, Hasan},
+  booktitle = {Findings of the Association for Computational Linguistics: EACL 2027},
+  year      = {2027}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/consensus-correctness/"><img src="images/thumbs/consensus-correctness.jpg" width="600" height="391" loading="lazy" decoding="async" alt="Figure from Consensus &amp; Correctness"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/consensus-correctness/">When Does Consensus Mean Correctness? Measuring the Agreement–Accuracy Coupling with Semantics-Preserving Re-Rendering</a></h3>
+<b>Rasul Khanbayov</b>, Hasan Kurban<br>
+<em>Findings of the Association for Computational Linguistics: EACL</em>, 2027
+<div class="pub-desc">Uses programmatically re-rendered scientific figures to measure when a vision-language model&#x27;s agreement across equivalent inputs actually tracks correctness, and shows that fine-tuning on self-consensus lowers accuracy.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2608.05670" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@inproceedings{khanbayov2027when,
+  title     = {When Does Consensus Mean Correctness? Measuring the Agreement–Accuracy Coupling with Semantics-Preserving Re-Rendering},
+  author    = {Khanbayov, Rasul and Kurban, Hasan},
+  booktitle = {Findings of the Association for Computational Linguistics: EACL 2027},
+  year      = {2027}
+}</pre></details></div>
+</div>
+</article>
+</div>
+</section>
+<section class="pub-group" data-group="peer">
+<h3 class="group-title">Other Peer-reviewed Publications</h3>
+<div class="pubs">
+<article class="pub">
+<div class="pub-thumb"><a href="papers/tuning-into-bias/"><img src="images/thumbs/tuning-into-bias.jpg" width="600" height="492" loading="lazy" decoding="async" alt="Figure from Tuning Into Bias"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/tuning-into-bias/">Tuning Into Bias: A Computational Study of Gender Bias in Song Lyrics</a></h3>
+Danqing Chen*, Adithi Satish*, <b>Rasul Khanbayov*</b>, Carolin M. Schuster, Georg Groh <span class="eq-note">(* equal contribution)</span><br>
+<em>Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL)</em>, 2025
+<div class="pub-desc">A topic-modeling study of 537,553 English songs that traces a shift from romantic themes toward the sexualization of women, and measures gender bias in word embeddings with SC-WEAT across topics and genres.</div>
+<div class="pub-links"><a href="https://aclanthology.org/2025.latechclfl-1.12.pdf" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<a href="https://aclanthology.org/2025.latechclfl-1.12/" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">menu_book</span> ACL Anthology</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@inproceedings{chen2025tuning,
+  title     = {Tuning Into Bias: A Computational Study of Gender Bias in Song Lyrics},
+  author    = {Chen, Danqing and Satish, Adithi and Khanbayov, Rasul and Schuster, Carolin M. and Groh, Georg},
+  booktitle = {Proceedings of the 9th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL 2025)},
+  pages     = {117--129},
+  year      = {2025}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/knot-detection/"><img src="images/thumbs/knot-detection.jpg" width="600" height="203" loading="lazy" decoding="async" alt="Figure from Knot Detection"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/knot-detection/">Automated Knot Detection and Pairing for Wood Analysis in the Timber Industry</a></h3>
+Guohao Lin, Shidong Pan, <b>Rasul Khanbayov</b>, Changxi Yang, Ani Khaloian-Sarnaghi, Andriy Kovryga<br>
+<em>International Conference on Neural Information Processing (ICONIP)</em>, 2025
+<div class="pub-desc">A lightweight pipeline that detects knots on high-resolution timber surface images with YOLOv8 (mAP@0.5 of 0.887) and pairs corresponding knots across board faces with a triplet network and clustering (0.85 pairing accuracy).</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2505.05845" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@inproceedings{lin2025automated,
+  title     = {Automated Knot Detection and Pairing for Wood Analysis in the Timber Industry},
+  author    = {Lin, Guohao and Pan, Shidong and Khanbayov, Rasul and Yang, Changxi and Khaloian-Sarnaghi, Ani and Kovryga, Andriy},
+  booktitle = {International Conference on Neural Information Processing (ICONIP)},
+  pages     = {81--95},
+  publisher = {Springer Nature Singapore},
+  year      = {2025}
+}</pre></details></div>
+</div>
+</article>
+</div>
+</section>
+<section class="pub-group" data-group="submitted">
+<h3 class="group-title">Under Review</h3>
+<p class="group-intro">Papers currently submitted to conferences and journals.</p>
+<div class="pubs">
+<article class="pub">
+<div class="pub-thumb"><a href="papers/truncation-samplers/"><img src="images/thumbs/truncation-samplers.jpg" width="600" height="210" loading="lazy" decoding="async" alt="Figure from Truncation Samplers"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/truncation-samplers/">Truncation Samplers Are Nested: Comparing Decoding Rules Is a Measurement Problem</a></h3>
+<b>Rasul Khanbayov</b>, Hasan Kurban<br>
+<em>Submitted to ICLR 2027</em> &middot; arXiv:2610.15570
+<div class="pub-desc">Shows that almost all deployed truncation samplers keep a prefix of the probability-sorted vocabulary and are therefore nested, which yields a closed-form separation certificate and a coupling that gives an unbiased, lower-variance paired estimator for comparing decoding rules.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2610.15570" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{khanbayov2026truncation,
+  title     = {Truncation Samplers Are Nested: Comparing Decoding Rules Is a Measurement Problem},
+  author    = {Khanbayov, Rasul and Kurban, Hasan},
+  journal   = {arXiv preprint arXiv:2610.15570},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/top-k-distillation/"><img src="images/thumbs/top-k-distillation.jpg" width="600" height="192" loading="lazy" decoding="async" alt="Figure from Top-k Distillation"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/top-k-distillation/">The Gradient That Top-k Distillation Never Computes</a></h3>
+<b>Rasul Khanbayov</b>, Hasan Kurban<br>
+<em>Submitted to AISTATS 2027</em> &middot; arXiv:2610.15589
+<div class="pub-desc">Proves that renormalized top-k distillation has exactly zero gradient along the directions that control the teacher&#x27;s tail mass, so a student&#x27;s tail mass can drift away from the teacher&#x27;s, and measures the effect on seven open-weight teachers.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2610.15589" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<a href="https://github.com/KurbanIntelligenceLab/top-k-distillation" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">code</span> Code</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{khanbayov2026the,
+  title     = {The Gradient That Top-k Distillation Never Computes},
+  author    = {Khanbayov, Rasul and Kurban, Hasan},
+  journal   = {arXiv preprint arXiv:2610.15589},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/low-grounding-score/"><img src="images/thumbs/low-grounding-score.jpg" width="395" height="395" loading="lazy" decoding="async" alt="Figure from Low Grounding Score"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/low-grounding-score/">A Low Grounding Score Is Not an Ungrounded Judge: Identifying the Perceptibility Confound in Multimodal Oversight</a></h3>
+<b>Rasul Khanbayov</b>, Hasan Kurban<br>
+<em>Submitted to AAAI 2027 (AI Alignment Track)</em> &middot; arXiv:2610.00111
+<div class="pub-desc">Shows that counterfactual grounding probes for multimodal model judges are capped by how perceptible the image edit is, so a low score can be a false alarm, and identifies the false-alarm rate from quantities the audit already collects.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2610.00111" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{khanbayov2026a,
+  title     = {A Low Grounding Score Is Not an Ungrounded Judge: Identifying the Perceptibility Confound in Multimodal Oversight},
+  author    = {Khanbayov, Rasul and Kurban, Hasan},
+  journal   = {arXiv preprint arXiv:2610.00111},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/one-perturbation/"><img src="images/thumbs/one-perturbation.jpg" width="600" height="364" loading="lazy" decoding="async" alt="Figure from One Perturbation"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/one-perturbation/">One Perturbation Is Not Enough: Identifiability and Blind Baselines for Behavioral AI Evaluation</a></h3>
+<b>Rasul Khanbayov</b>, Mariam Sohail, Ahmed Abdala, Hasan Kurban<br>
+<em>Submitted to AAAI 2027 (AI Alignment Track)</em> &middot; arXiv:2609.06190
+<div class="pub-desc">Proves how many independent perturbations a behavioral evaluation needs to certify that a model uses an input, derives the score a blind policy would receive, and finds that three vision-language models reading physical quantities from video score below their own blind bound.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2609.06190" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{khanbayov2026one,
+  title     = {One Perturbation Is Not Enough: Identifiability and Blind Baselines for Behavioral AI Evaluation},
+  author    = {Khanbayov, Rasul and Sohail, Mariam and Abdala, Ahmed and Kurban, Hasan},
+  journal   = {arXiv preprint arXiv:2609.06190},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/physweep/"><img src="images/thumbs/physweep.jpg" width="600" height="236" loading="lazy" decoding="async" alt="Figure from PhysWeep"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/physweep/">PhysWeep: Does a Video Generator Realize the Physics You Ask For?</a></h3>
+<b>Rasul Khanbayov</b>, Hasan Kurban<br>
+<em>Submitted to Pattern Recognition</em> &middot; arXiv:2609.06207
+<div class="pub-desc">A label-free audit that recovers the physical parameter a video generator actually realizes from its pixels, revealing that open image-to-video models lock onto seed-dependent wrong values instead of the requested physics.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2609.06207" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{khanbayov2026physweep,
+  title     = {PhysWeep: Does a Video Generator Realize the Physics You Ask For?},
+  author    = {Khanbayov, Rasul and Kurban, Hasan},
+  journal   = {arXiv preprint arXiv:2609.06207},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/physics-as-the-label/"><img src="images/thumbs/physics-as-the-label.jpg" width="600" height="338" loading="lazy" decoding="async" alt="Figure from MatPCR"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/physics-as-the-label/">Physics as the label for measuring and correcting materials reasoning in multimodal models</a></h3>
+Hasan Kurban, <b>Rasul Khanbayov</b>, Mustafa Kurban<br>
+<em>Submitted to Knowledge-Based Systems</em> &middot; arXiv:2609.12181
+<div class="pub-desc">MatPCR, a label-free benchmark whose programmatic physics oracles check whether multimodal models reason about materials data in a physically consistent way, plus a constraint-grounded self-verification loop.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2609.12181" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{kurban2026physics,
+  title     = {Physics as the label for measuring and correcting materials reasoning in multimodal models},
+  author    = {Kurban, Hasan and Khanbayov, Rasul and Kurban, Mustafa},
+  journal   = {arXiv preprint arXiv:2609.12181},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/topical-phase-transitions/"><img src="images/thumbs/topical-phase-transitions.jpg" width="600" height="335" loading="lazy" decoding="async" alt="Figure from Topical Phase Transitions"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/topical-phase-transitions/">Topical Phase Transitions in Artificial Intelligence Research: Large-Scale Evidence and an Early-Warning Signature for Emerging Topics</a></h3>
+<b>Rasul Khanbayov</b>, Hasan Kurban<br>
+<em>Submitted to Quantitative Science Studies</em> &middot; arXiv:2606.12828
+<div class="pub-desc">An analysis of 80,814 main-track papers from ACL, CVPR, ICLR, ICML and NeurIPS (2017–2025) showing that AI topics advance through abrupt cross-venue phase transitions, with an early-warning signature for emerging topics.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2606.12828" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<a href="https://github.com/KurbanIntelligenceLab/ai-phase-transitions" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">code</span> Code</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{khanbayov2026topical,
+  title     = {Topical Phase Transitions in Artificial Intelligence Research: Large-Scale Evidence and an Early-Warning Signature for Emerging Topics},
+  author    = {Khanbayov, Rasul and Kurban, Hasan},
+  journal   = {arXiv preprint arXiv:2606.12828},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+</div>
+</section>
+<section class="pub-group" data-group="mentored">
+<h3 class="group-title">Mentored Student Research</h3>
+<p class="group-intro">Papers led by undergraduate students in our lab whom I mentor as a PhD student; I contributed in an advisory role.</p>
+<div class="pubs">
+<article class="pub">
+<div class="pub-thumb"><a href="papers/counterfactual-sensitivity/"><img src="images/thumbs/counterfactual-sensitivity.jpg" width="600" height="358" loading="lazy" decoding="async" alt="Figure from CARVE"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/counterfactual-sensitivity/">Counterfactual Sensitivity Is Not Repairability: Auditing Replay Probes for Video Evidence</a></h3>
+Rama AlHamidi, <b>Rasul Khanbayov</b>, Erchin Serpedin, Hasan Kurban<br>
+<em>arXiv preprint arXiv:2608.15685</em>
+<div class="pub-desc">CARVE, a black-box counterfactual probe that compares answers under matched sham and destroy replays of retrieved frames to audit whether tool-using video agents rely on the evidence they retrieve.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2608.15685" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<a href="https://github.com/KurbanIntelligenceLab/CARVE" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">code</span> Code</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{alhamidi2026counterfactual,
+  title     = {Counterfactual Sensitivity Is Not Repairability: Auditing Replay Probes for Video Evidence},
+  author    = {AlHamidi, Rama and Khanbayov, Rasul and Serpedin, Erchin and Kurban, Hasan},
+  journal   = {arXiv preprint arXiv:2608.15685},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/conformal-coverage/"><img src="images/thumbs/conformal-coverage.jpg" width="600" height="269" loading="lazy" decoding="async" alt="Figure from COVER"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/conformal-coverage/">Conformal Coverage Guarantees for Any Video Temporal Grounder</a></h3>
+Aseel Mohamed, <b>Rasul Khanbayov</b>, Erchin Serpedin, Hasan Kurban<br>
+<em>Submitted to AISTATS 2027</em> &middot; arXiv:2608.07434
+<div class="pub-desc">COVER, a post-hoc, model-agnostic conformal wrapper that turns any video temporal grounder into one that outputs a region guaranteed to contain the true moment with a user-chosen probability.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2608.07434" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{mohamed2026conformal,
+  title     = {Conformal Coverage Guarantees for Any Video Temporal Grounder},
+  author    = {Mohamed, Aseel and Khanbayov, Rasul and Serpedin, Erchin and Kurban, Hasan},
+  journal   = {arXiv preprint arXiv:2608.07434},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/repair-agentic-videoqa/"><img src="images/thumbs/repair-agentic-videoqa.jpg" width="383" height="520" loading="lazy" decoding="async" alt="Figure from REPAIR"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/repair-agentic-videoqa/">Accuracy and Cost Claims Do Not Survive Re-Execution in Agentic VideoQA</a></h3>
+Rama AlHamidi, Aseel Mohamed, <b>Rasul Khanbayov</b>, Mohamed Rayan Barhdadi, Erchin Serpedin, Hasan Kurban<br>
+<em>Submitted to Image and Vision Computing</em> &middot; arXiv:2607.01469
+<div class="pub-desc">Shows that accuracy and cost claims in agentic VideoQA can reverse when the same evaluation is re-run, and introduces REPAIR, a protocol that tests whether a paired method effect is reproducible.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2607.01469" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{alhamidi2026accuracy,
+  title     = {Accuracy and Cost Claims Do Not Survive Re-Execution in Agentic VideoQA},
+  author    = {AlHamidi, Rama and Mohamed, Aseel and Khanbayov, Rasul and Barhdadi, Mohamed Rayan and Serpedin, Erchin and Kurban, Hasan},
+  journal   = {arXiv preprint arXiv:2607.01469},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+<article class="pub">
+<div class="pub-thumb"><a href="papers/4d-synchronized-fields/"><img src="images/thumbs/4d-synchronized-fields.jpg" width="600" height="227" loading="lazy" decoding="async" alt="Figure from 4D Synchronized Fields"></a></div>
+<div class="pub-body">
+<h3 class="pub-title"><a href="papers/4d-synchronized-fields/">4D Synchronized Fields: Motion-Language Gaussian Splatting for Temporal Scene Understanding</a></h3>
+Mohamed Rayan Barhdadi, Samir Abdaljalil, <b>Rasul Khanbayov</b>, Erchin Serpedin, Hasan Kurban<br>
+<em>Submitted to AAAI 2027</em> &middot; arXiv:2603.14301
+<div class="pub-desc">A 4D Gaussian splatting representation that learns object-factored motion during reconstruction and synchronizes language to the resulting kinematics, enabling open-vocabulary queries over both objects and moments.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2603.14301" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a>
+<details class="bib"><summary><span class="material-icons">format_quote</span> BibTeX</summary><pre class="bibtex">@article{barhdadi20264d,
+  title     = {4D Synchronized Fields: Motion-Language Gaussian Splatting for Temporal Scene Understanding},
+  author    = {Barhdadi, Mohamed Rayan and Abdaljalil, Samir and Khanbayov, Rasul and Serpedin, Erchin and Kurban, Hasan},
+  journal   = {arXiv preprint arXiv:2603.14301},
+  year      = {2026}
+}</pre></details></div>
+</div>
+</article>
+</div>
+</section>
+
+<h2>Experience</h2>
+<div class="exp">
+<div><span class="exp-org">Hamad Bin Khalifa University</span><span class="exp-when">Jan 2026 &ndash; present</span></div><p>Graduate Research Assistant. Physical reasoning from video (recovering dynamics and physical parameters from monocular footage) and label-free reliability measures for vision&ndash;language models reading charts and scientific figures. I also mentor undergraduate students in the lab on video agents, temporal grounding and 4D scene understanding.</p>
+<div><span class="exp-org">OneVue Inc.</span><span class="exp-when">Nov 2025 &ndash; Aug 2026</span></div><p>AI Engineer (remote). Retinal image analysis pipelines for early detection of diabetic and pre-diabetic conditions, adapting retinal foundation models (RETFound, ViT) and combining fundus/OCT imaging with patient metadata.</p>
+<div><span class="exp-org">SynthesEyes</span><span class="exp-when">Sep 2024 &ndash; Aug 2025</span></div><p>Computer Vision Engineer. Attention U-Nets that turn 3D intraoperative OCT volumes into 2D feature maps for real-time surgical visualisation, and multimodal registration with LoFTR and GeoFormer.</p>
+<div><span class="exp-org">Technical University of Munich</span><span class="exp-when">Sep 2023 &ndash; Aug 2024</span></div><p>Student Researcher. Knot detection and pairing on timber images (YOLOv8, mAP@0.5 of 0.887) and gender-bias analysis of song lyrics with BERTopic and SC-WEAT.</p>
+<div><span class="exp-org">BMW Group</span><span class="exp-when">Oct 2022 &ndash; Mar 2023</span></div><p>Business Analyst Intern. KPI dashboards for product-line quality management (JavaScript, Python, PySpark, SQL).</p>
+<div><span class="exp-org">Ericsson</span><span class="exp-when">Mar 2021 &ndash; Jul 2022</span></div><p>Software Developer (Student). Features and functional tests for the Ericsson Orchestrator Cloud Manager (Java, Spring, Docker, Kubernetes).</p>
+</div>
+</main>
+<script>
+document.querySelectorAll('.tab-btn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var f = btn.getAttribute('data-filter');
+    document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.toggle('active', b === btn); });
+    document.querySelectorAll('.pub-group').forEach(function (g) {
+      g.style.display = (f === 'all' || g.getAttribute('data-group') === f) ? '' : 'none';
+    });
+  });
+});
+</script>
+<footer>
+<p><a href="">Rasul Khanbayov</a> &middot; <a href="papers/">Publications</a> &middot; <a href="cv/">CV</a></p>
+<p>&copy; 2026 Rasul Khanbayov</p>
+</footer>
+<script>
+(function () {
+  var body = document.body, icon = document.getElementById('theme-icon');
+  function set(dark) {
+    body.classList.toggle('dark', dark);
+    if (icon) icon.textContent = dark ? 'dark_mode' : 'light_mode';
+  }
+  set(document.documentElement.classList.contains('dark-pending'));
+  document.documentElement.classList.remove('dark-pending');
+  document.getElementById('theme-toggle').addEventListener('click', function () {
+    var dark = !body.classList.contains('dark');
+    set(dark);
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

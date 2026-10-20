@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consistency Has a Computable Blind Spot: A Commutation Theory of Label-Free Reliability for Vision–Language Figure Reading — Rasul Khanbayov</title>
+<meta name="description" content="Shows that the blind spot of invariance-based reliability checks for figure-reading vision-language models is computable, and introduces the Equivariance-Consistency Score, a label-free detector built on edits that should change the answer by a known amount.">
+<meta name="author" content="Rasul Khanbayov">
+<link rel="canonical" href="https://rasulkhanbayov.github.io/papers/consistency-blind-spot/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rasul Khanbayov">
+<meta property="og:title" content="Consistency Has a Computable Blind Spot: A Commutation Theory of Label-Free Reliability for Vision–Language Figure Reading — Rasul Khanbayov">
+<meta property="og:description" content="Shows that the blind spot of invariance-based reliability checks for figure-reading vision-language models is computable, and introduces the Equivariance-Consistency Score, a label-free detector built on edits that should change the answer by a known amount.">
+<meta property="og:url" content="https://rasulkhanbayov.github.io/papers/consistency-blind-spot/">
+<meta property="og:image" content="https://rasulkhanbayov.github.io/images/profile.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FAFAFA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" type="image/png" href="../../images/favicon.png">
+<script>
+/* Apply the saved (or system) theme before first paint to avoid a flash. */
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark-pending');
+  }
+})();
+</script>
+</head>
+<body class="sub">
+<button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark/light mode"><span class="material-icons" id="theme-icon">light_mode</span></button>
+<main class="page">
+<nav class="breadcrumb"><a href="../../">Rasul Khanbayov</a> &rsaquo; <a href="../">Publications</a> &rsaquo; Consistency Blind Spot</nav>
+<h1>Consistency Has a Computable Blind Spot: A Commutation Theory of Label-Free Reliability for Vision–Language Figure Reading</h1>
+<p class="meta"><b>Rasul Khanbayov</b>, Hasan Kurban<br>
+<em>Findings of the Association for Computational Linguistics: EACL</em>, 2027</p>
+<p class="figure"><img src="../../images/thumbs/consistency-blind-spot.jpg" width="600" height="391" decoding="async" alt="Figure from Consistency Blind Spot"></p>
+<p><strong>In one sentence.</strong> Shows that the blind spot of invariance-based reliability checks for figure-reading vision-language models is computable, and introduces the Equivariance-Consistency Score, a label-free detector built on edits that should change the answer by a known amount.</p>
+<p class="pub-links"><a href="https://arxiv.org/abs/2608.05675" class="btn btn-pub" target="_blank" rel="noopener"><span class="material-icons">picture_as_pdf</span> PDF</a></p>
+<h2>Abstract</h2>
+<p class="abstract">Label-free reliability for vision-language models rests on invariance: perturb the input and a faithful reader&#x27;s answer should not change. This has a known blind spot, a systematic misreading survives the perturbation and gets certified wrong, which we show is computable, not just real: an error is invisible to an edit exactly when the two commute, so the errors a suite cannot reach form its joint centralizer, a set that shrinks as edits are added and can be written down rather than guessed at. We act on the complementary relation, equivariance: edit a figure&#x27;s data and the correct answer must change by a computable amount. Two matched edits are provably complete for affine reading errors; no suite of swap edits is complete for label permutations, and cyclic relabeling closes most of that gap. We instantiate the theory as the Equivariance-Consistency Score, a label-free, training-free detector, and release REND-EQUIV, pairing matched invariance and equivariance sets over identical data. The predicted ordering holds across three models and a hand-labeled population immune to the one circularity in how it is selected; a second invariance-family method confirms the blind spot belongs to the relation, not to any implementation; and cyclic relabeling delivers its predicted gain on a matched real sample. The same characterization explains a reported inversion of this ordering in the classifier metamorphic-testing literature: detectability is a joint property of the relation and the fault class, never of the relation alone.</p>
+<h2>BibTeX</h2>
+<pre class="bibtex">@inproceedings{khanbayov2027consistency,
+  title     = {Consistency Has a Computable Blind Spot: A Commutation Theory of Label-Free Reliability for Vision–Language Figure Reading},
+  author    = {Khanbayov, Rasul and Kurban, Hasan},
+  booktitle = {Findings of the Association for Computational Linguistics: EACL 2027},
+  year      = {2027}
+}</pre>
+
+<div class="author-box">
+<p><strong>About the author.</strong> <a href="../../">Rasul Khanbayov</a> is a computer science PhD student at
+<strong>Hamad Bin Khalifa University</strong> working on computer vision and multimodal learning, with a focus on
+<strong>physical reasoning from video</strong> and the <strong>reliability of vision&ndash;language models</strong>.</p>
+<p style="margin:0;"><a href="../../" class="btn"><span class="material-icons">home</span> Homepage</a>
+<a href="../" class="btn"><span class="material-icons">library_books</span> All publications</a>
+<a href="../../data/Rasul_Khanbayov_CV.pdf" class="btn" target="_blank" rel="noopener"><span class="material-icons">description</span> CV</a></p>
+</div>
+</main>
+<footer>
+<p><a href="../../">Rasul Khanbayov</a> &middot; <a href="../../papers/">Publications</a> &middot; <a href="../../cv/">CV</a></p>
+<p>&copy; 2026 Rasul Khanbayov</p>
+</footer>
+<script>
+(function () {
+  var body = document.body, icon = document.getElementById('theme-icon');
+  function set(dark) {
+    body.classList.toggle('dark', dark);
+    if (icon) icon.textContent = dark ? 'dark_mode' : 'light_mode';
+  }
+  set(document.documentElement.classList.contains('dark-pending'));
+  document.documentElement.classList.remove('dark-pending');
+  document.getElementById('theme-toggle').addEventListener('click', function () {
+    var dark = !body.classList.contains('dark');
+    set(dark);
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
