@@ -198,6 +198,8 @@ pre.bibtex {
 /* ---------- Experience ---------- */
 .exp { display: grid; grid-template-columns: 170px 1fr; gap: 6px 16px; }
 .exp-when { display: block; font-size: 13px; color: var(--faint); }
+.exp-logo { width: auto; height: 16px; margin-right: 6px; vertical-align: -2px; border-radius: 3px; }
+body.dark .exp-logo { background: #fff; }   /* keeps dark logos (e.g. Ericsson) visible in dark mode */
 .exp p { margin: 0 0 10px; }
 
 /* ---------- Sub-pages ---------- */
