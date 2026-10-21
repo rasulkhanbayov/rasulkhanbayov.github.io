@@ -88,6 +88,7 @@ p { margin: 0 0 12px; }
 .btn .material-icons, details.bib > summary .material-icons { font-size: 1.2em; }
 
 .btn-pub, details.bib > summary { background: var(--btn-pub); }
+.btn-soon, .btn-soon:hover { background: var(--rule); color: var(--faint); box-shadow: none; cursor: default; }
 .btn-pub:hover, details.bib > summary:hover { background: var(--btn-pub-hover); color: #fff; }
 
 /* ---------- Theme toggle ---------- */
