@@ -1,6 +1,8 @@
 # Original source documents (kept locally, never published)
 _source/
 raw_data.txt
+Motivation_Letter_*.docx
+email.txt
 
 # LaTeX build output
 cv_latex/*.aux
