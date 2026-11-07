@@ -3,6 +3,7 @@ _source/
 raw_data.txt
 Motivation_Letter_*.docx
 email.txt
+cv_industry/
 
 # LaTeX build output
 cv_latex/*.aux
